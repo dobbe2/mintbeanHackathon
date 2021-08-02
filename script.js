@@ -3,7 +3,9 @@ let suits = ["spades", "diamonds", "clubs", "hearts"];
 let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 let deck1 = makeDeck() ;
 shuffle(deck1);
-renderDeck(deck1);
+dealDeck(deck1);
+// renderDeck(deck1);
+
 
 //creating the deck of cards into new array
 function makeDeck(){
@@ -35,6 +37,21 @@ function shuffle(){
         deck1[card2] = tempSpot;
     }
 }
+
+//deal all cards into 2 equal piles
+
+function dealDeck(){
+    let middleOfDeck = Math.ceil(deck1.length / 2);
+
+        let userDeck = deck1.splice(0, middleOfDeck);
+        let computerDeck = deck1.splice(-middleOfDeck);
+
+        console.log(userDeck);
+        console.log(computerDeck)
+
+
+}
+
 
 //code to display the deck (all 52 cards)
 function renderDeck()
