@@ -1,5 +1,9 @@
-.deck
-{
+h1, h3{
+    display: flex;
+    justify-content: center;
+}
+
+.deck{
 	width:50%;
 	margin: 20px auto;
 	background:dodgerblue;
@@ -10,8 +14,7 @@
 	color:white;
 }
 
-.card
-{
+.card{
 	padding: 10px;
 	border: solid 1px #808080;
 	background-color: white;
@@ -23,8 +26,7 @@
 	margin: 3px;
 }
 
-.btn
-{
+.btn{
 	background:white;
 	padding: 10px 20px;
 	border-radius:30px;
